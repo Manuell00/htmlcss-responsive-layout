@@ -1,0 +1,128 @@
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* Header */
+header{
+    background-color: dodgerblue;
+    height: 100px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menumobile{
+    display: none;
+}
+
+    /* Versione tablet */
+
+@media  screen and (max-width:768px) {
+    #menumobile{
+        display: block;
+    }
+
+    #menudesktop{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+/* Parte principale */
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    width: 45%;
+}
+
+    /* Sezione Developer */
+.col .app{
+    width: 55%;
+}
+
+.col .code{
+    width: 35%;
+}
+
+    /* Versione smartphone */
+@media screen and (max-width: 480px){
+    #devsection .row{
+        display: block;
+    }
+
+    .col .app,
+    .col .code{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+/* DEBUG */
+section{
+    min-height: 150px;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+
+.container{
+   background-color: aqua;
+   min-height: 50px;
+}
+
+footer{
+    min-height: 150px;
+}
+
+#logo,
+header nav{
+    min-width: 50px;
+    min-height: 50px;
+    background-color: blueviolet;
+    border: solid 1px white;
+}
+
+.col{
+    min-height: 100px;
+    background-color: green;
+}
