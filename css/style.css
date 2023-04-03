@@ -1,8 +1,10 @@
 /* Regole generali */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
 }
 
 .container{
@@ -10,19 +12,50 @@
     margin: 0 auto;
 }
 
+.button{
+    padding: 7px;
+    border-radius: 15px;
+    background-color: white;
+}
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
 
 
 /* Header */
 header{
+    height: 80px;
     background-color: dodgerblue;
-    height: 100px;
+    width: 100%;
+     position: fixed;
 }
 
 header .container{
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: dodgerblue;
+}
+
+#logo{
+    padding: 10px;
+    max-width: 30%;
+    height: auto;
+    text-align: center;
+}
+
+
+#menudesktop{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 #menumobile{
@@ -34,6 +67,11 @@ header .container{
 @media  screen and (max-width:768px) {
     #menumobile{
         display: block;
+        color: white;
+    }
+
+    .fa-bars{
+        font-size: 20px;
     }
 
     #menudesktop{
@@ -65,6 +103,10 @@ header .container{
 
 .col .code{
     width: 35%;
+}
+
+#devsection{
+    padding-top: 100px;
 }
 
     /* Versione smartphone */
@@ -112,14 +154,6 @@ section{
 
 footer{
     min-height: 150px;
-}
-
-#logo,
-header nav{
-    min-width: 50px;
-    min-height: 50px;
-    background-color: blueviolet;
-    border: solid 1px white;
 }
 
 .col{
