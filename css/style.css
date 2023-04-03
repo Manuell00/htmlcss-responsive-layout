@@ -116,17 +116,15 @@ header .container {
 
 /* Definisco le grandezze delle mie sottoporzioni di colonne e righe */
 .text-app {
-    max-width: 45%;
-    height: auto;
+    max-width: 50%;
     margin-bottom: 50px;
 }
 
 .image-app {
+    text-align: center;
     align-self: flex-end;
-    max-width: 35%;
-    position: relative;
+    max-width: 40%;
 }
-
 
 .image-app img {
     max-width: 100%;
@@ -219,12 +217,29 @@ header .container {
 /* Versione Tablet */
 @media screen and (max-width:768px) {
     .col,
-    .col.app,
     .col.code {
         display: block;
-        width: 100%;
         margin-bottom: 15px;
         text-align: center;
+    }
+
+    .col.app{
+        display: block;
+        text-align: left;
+    }
+
+    .text-app{
+       max-width: 100%;
+       line-height: 1.3rem;
+    }
+
+    .col.app p {
+        text-align: left;
+        margin-bottom: 3.0rem;
+    }
+
+    .image-app {
+        max-width: 60%;
     }
 
     .col img {
@@ -233,11 +248,7 @@ header .container {
         object-fit: cover;
     }
 
-
 }
-
-
-
 
 
 
@@ -250,17 +261,21 @@ header .container {
     .col,
     .col.app,
     .col.code {
-        display: block;
-        margin-bottom: 15px;
+        width: 100%;
         text-align: center;
+        padding: 2.0rem;
     }
 
-    .col img {
-        margin-top: 20px;
-        max-width: 100%;
-        max-height: auto;
-        object-fit: cover;
+    .col.app{
+        padding-bottom: 0;
     }
+
+    .image-app {
+        max-width: 100%;
+    }
+
+ 
+
 }
 
 
