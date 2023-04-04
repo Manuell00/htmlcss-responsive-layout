@@ -19,9 +19,9 @@
 }
 
 .circle-button {
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 100%;
-    background-color: #8c6ce5;
+    background-color: #9370DB;
 }
 
 a {
@@ -145,7 +145,7 @@ header .container {
     margin-top: 50px;
     max-width: 25%;
     height: auto;
-    background-color:#8c6ce5;
+    background-color:#9370DB
 }
 
 .col.planning-white{
@@ -177,6 +177,7 @@ header .container {
 
 /* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione PLANNING */
 .text-plan {
+    margin-top: 50px;
     max-width: 100%;
     margin-bottom: 50px;
     color: white;
@@ -354,7 +355,6 @@ header .container {
 }
 
 
-
 /* Versione smartphone */
 @media screen and (max-width: 480px) {
     #devsection .row {
@@ -377,9 +377,65 @@ header .container {
         max-width: 100%;
     }
 
- 
-
 }
+
+
+/* SEZIONE PLANNING */
+
+
+/* Versione Tablet */
+@media screen and (max-width:768px) {
+    #plan .row.planning {
+        display: block;
+    }
+
+    .col.planning,
+    .col.planning-white {
+        padding: 20px;
+        max-width: 90%;
+        width: 100%;
+        display: block;
+        margin: 25px;
+    }
+
+    .text-plan{
+       max-width: 100%;
+       line-height: 1.3rem;
+    }
+
+    .col.planning p {
+        text-align: left;
+        margin-bottom: 3.0rem;
+    }
+   
+    .col.planning h2 {
+        text-align: left;
+        margin: 3.0rem 0;
+        font-size: 3rem;
+    }
+
+    .image-plan, .image-plan-white {
+        max-width: 60%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
