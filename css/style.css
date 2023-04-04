@@ -196,6 +196,27 @@ header .container {
     font-size: 30px;
 }
 
+
+/* Inserisco le righe e colonne per la parte ABOUT US */
+
+.col.text-about{
+    background-color:white;
+    width: 75%;
+}
+
+.col.image-about{
+    background-color:white;
+    width: 20%;
+}
+
+.image-about img {
+    border-radius: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
 /* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione DEVELOPER */
 .text-app {
     max-width: 50%;
@@ -401,6 +422,31 @@ header .container {
     padding: 0 10px;
     font-weight: 600;
     text-align: left;
+}
+
+
+/* Definisco le grandezze degli elementi interni alle colonne generali ABOUT US */
+
+.col.text-about h2 {
+    color:#B19FF9;
+    font-size:50px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.col.text-about p {
+    text-align: left;
+    color: black;
+    padding: 10px;
+}
+
+.about-presentation{
+    padding: 20px;
+    padding-left: 0;
+    font-weight: 600;
+    color: #B19FF9;
+    text-align: left;
+    font-size: 20px;
 }
 
 
@@ -678,6 +724,49 @@ header .container {
         width: 100%;
         margin: 25px;
     }
+
+}
+
+/* SEZIONE ABOUT US */
+
+/* Versione Tablet */
+@media screen and (max-width:768px) {
+
+    .col.text-about {
+        padding: 20px;
+        max-width: 45%;
+        width: 100%;
+        margin: 25px;
+    }
+    .col.image-about {
+        padding: 20px;
+        max-width: 35%;
+        width: 100%;
+        margin: 25px;
+    }
+
+}
+
+/* Versione smartphone */
+@media screen and (max-width:480px) {
+
+    #about .row {
+        display: block;
+    }
+
+    .col.text-about {
+        padding: 20px;
+        max-width: 100%;
+        width: 90%;
+        margin: 25px;
+    }
+    .col.image-about {
+        padding: 20px;
+        max-width: 100%;
+        width: 90%;
+        margin: 25px;
+    }
+
 
 }
 
