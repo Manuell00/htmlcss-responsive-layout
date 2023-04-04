@@ -336,6 +336,7 @@ header .container {
 .test-name{
     padding: 0 10px;
     font-weight: 600;
+    text-align: left;
 }
 
 
@@ -514,8 +515,80 @@ header .container {
 
 
 
+/* SEZIONE TESTIMONIAL */
+
+/* Versione Tablet */
+@media screen and (max-width:768px) {
+    #test .row {
+        display: block;
+    }
+
+    .col.col.testimonials-white,
+    .col.col.testimonials {
+        padding: 20px;
+        max-width: 90%;
+        width: 100%;
+        margin: 25px;
+    }
+
+    .text-test{
+       max-width: 100%;
+       line-height: 1.3rem;
+    }
+
+    .col.testimonials p {
+        text-align: left;
+        margin-bottom: 1.5rem;
+        padding: 0;
+    }
+   
+    .col.testimonials h2 {
+        text-align: left;
+        margin: 3.0rem 0;
+        font-size: 3rem;
+    }
+
+    .test-name{
+        padding: 0;
+    }
+
+    .image-test {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image-test img {
+        max-width: 100%;
+    }
+}
 
 
+
+
+/* Versione Smartphone */
+@media screen and (max-width:480px) {
+
+    .col.testimonials {
+        display: block;
+    }
+
+    .image-test{
+        padding-bottom: 0;
+    }
+
+    .col.testimonials p{
+        font-size: 1.3rem;
+        line-height: 2.0rem;
+        text-align: center;
+    }
+
+    .test-name{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+}
 
 
 
