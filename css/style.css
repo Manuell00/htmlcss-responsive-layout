@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -143,16 +143,36 @@ header .container {
 
 .col.planning{
     margin-top: 50px;
-    max-width: 25%;
+    max-width: 35%;
     height: auto;
-    background-color:#9370DB
+    background-color:#B19FF9
 }
 
 .col.planning-white{
     margin-top: 50px;
-    max-width: 25%;
+    max-width: 35%;
     background-color:white;
     align-self: flex-end;
+}
+
+
+/* Inserisco le righe e colonne per la parte TEST */
+
+.col.testimonials-white{
+    background-color:white;
+    padding: 10px;
+    width: 100%;
+}
+
+.col.testimonials{
+    color: white;
+    background-color:#B19FF9;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -206,6 +226,28 @@ header .container {
     max-width: 50%;
     object-fit: cover;
     z-index: 0;  
+}
+
+
+/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione TEST */
+
+.text-plan {
+    margin-top: 50px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.image-test {
+    width: 40%;
+    padding: 30px;
+}
+
+.image-test img {
+    border-radius: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 
@@ -275,6 +317,26 @@ header .container {
 }
 
 
+/* Definisco le grandezze degli elementi interni alle colonne generali TEST */
+
+#testimonials-intro{
+    text-align: center;
+    font-size: 13px;
+}
+
+.col.testimonials-white h2 {
+    color:#B19FF9;
+    font-size:30px
+}
+.col.testimonials p {
+    text-align: left;
+    color: white;
+}
+
+.test-name{
+    padding: 0 10px;
+    font-weight: 600;
+}
 
 
 /* SEZIONE DEVELOPER */
@@ -320,6 +382,11 @@ header .container {
 
 /* Versione Tablet */
 @media screen and (max-width:768px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .col,
     .col.code {
         display: block;
@@ -406,6 +473,7 @@ header .container {
     .col.planning p {
         text-align: left;
         margin-bottom: 3.0rem;
+        padding: 0;
     }
    
     .col.planning h2 {
@@ -415,9 +483,33 @@ header .container {
     }
 
     .image-plan, .image-plan-white {
-        max-width: 60%;
+        max-width: 100%;
         text-align: center;
     }
+
+    .image-plan img, .image-plan-white img {
+        max-width: 70%;
+    }
+}
+
+/* Versione smartphone */
+@media screen and (max-width: 480px) {
+      
+    .col.planning h2 {
+        text-align: left;
+        margin: 3.0rem 0;
+        font-size: 1.5rem;
+    }
+
+    .image-plan, .image-plan-white {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image-plan img, .image-plan-white img {
+        max-width: 90%;
+    }
+
 }
 
 
