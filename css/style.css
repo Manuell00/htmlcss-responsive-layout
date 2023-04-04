@@ -31,6 +31,13 @@
     background-color: #B19FF9;
 }
 
+.fat-button{
+    padding: 13px 60px;
+    border-radius: 35px;
+    background-color: white;
+    color: #B19FF9;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -103,8 +110,8 @@ header .container {
 
 /* PARTE PRINCIPALE */
 
-/* Definisco la grandezza delle mie righe e colonne */
 
+/* SEZIONE DEVELOPER */
 /* Inserisco le righe e colonne generiche */
 .row {
     display: flex;
@@ -116,6 +123,7 @@ header .container {
 }
 
 .col {
+    background-color:#c9d2ff;
     width: 30%;
     border-radius: 30px;
 }
@@ -136,86 +144,6 @@ header .container {
     justify-content: space-around;
 }
 
-/* Inserisco le righe e colonne per la parte PLANNING */
-
-.row.planning {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.col.planning{
-    margin-top: 50px;
-    max-width: 35%;
-    height: auto;
-    background-color:#B19FF9
-}
-
-.col.planning-white{
-    margin-top: 50px;
-    max-width: 35%;
-    background-color:white;
-    align-self: flex-end;
-}
-
-
-/* Inserisco le righe e colonne per la parte TEST */
-
-.col.testimonials-white{
-    background-color:white;
-    padding: 10px;
-    width: 100%;
-}
-
-.col.testimonials{
-    color: white;
-    background-color:#B19FF9;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* Inserisco le righe e colonne per la parte BENEFITS */
-
-.col.benefits{
-    background-color:white;
-}
-
-#benefits-title{
-    text-align: center;
-    color: white;
-    padding: 20px 0;
-    font-size: 30px;
-}
-
-
-/* Inserisco le righe e colonne per la parte ABOUT US */
-
-.col.text-about{
-    background-color:white;
-    width: 75%;
-}
-
-.col.image-about{
-    background-color:white;
-    width: 20%;
-}
-
-.image-about img {
-    border-radius: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
 
 /* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione DEVELOPER */
 .text-app {
@@ -234,73 +162,6 @@ header .container {
     object-fit: cover;
     z-index: 0;
 }
-
-
-/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione PLANNING */
-.text-plan {
-    margin-top: 50px;
-    max-width: 100%;
-    margin-bottom: 50px;
-    color: white;
-}
-
-.image-plan {
-    padding: 10px;
-    text-align: center;
-    max-width: 100%;
-}
-
-.image-plan img {
-    max-width: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-
-.image-plan-white {
-    padding: 10px;
-    max-width: 100%;
-    text-align: center;
-}
-
-.image-plan-white img {
-    max-width: 50%;
-    object-fit: cover;
-    z-index: 0;  
-}
-
-
-/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione TEST */
-
-.text-plan {
-    margin-top: 50px;
-    max-width: 100%;
-    margin-bottom: 50px;
-    color: white;
-}
-
-.image-test {
-    width: 40%;
-    padding: 30px;
-}
-
-.image-test img {
-    border-radius: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-
-/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione BENEFITS */
-
-.text-benefits {
-    max-width: 100%;
-    margin:20px 0;
-    text-align: left;
-    padding:20px ;
-}
-
 
 /* Definisco le grandezze degli elementi interni alle colonne generali DEVELOPER */
 .col h2 {
@@ -339,122 +200,8 @@ header .container {
 }
 
 
-
-
-/* Definisco le grandezze degli elementi interni alle colonne generali PLANNING */
-.black{
-    color: black;
-    text-align: center;
-}
-
-.col.planning h2 {
-    text-align: left;
-}
-
-.col.planning p {
-    text-align: left;
-}
-
-.col.planning-white h2 {
-    text-align: center;
-    font-style: oblique;
-    font-size: 20px;
-}
-
-.col.planning-white p {
-    text-align: center;
-    font-style: oblique;
-    font-size: 13px;
-}
-
-
-/* Definisco le grandezze degli elementi interni alle colonne generali TEST */
-
-#testimonials-intro{
-    text-align: center;
-    font-size: 13px;
-}
-
-.col.testimonials-white h2 {
-    color:#B19FF9;
-    font-size:30px
-}
-.col.testimonials p {
-    text-align: left;
-    color: white;
-}
-
-.test-name{
-    padding: 0 10px;
-    font-weight: 600;
-    text-align: left;
-}
-
-
-/* Definisco le grandezze degli elementi interni alle colonne generali BENEFITS */
-
-#testimonials-intro{
-    text-align: center;
-    font-size: 13px;
-}
-
-.col.benefits h2 {
-    color:#B19FF9;
-    font-size:50px;
-    text-align: left;
-    margin: 0;
-}
-
-.col.benefits h3 {
-    color:#B19FF9;
-    font-size:20px;
-    text-align: left;
-    margin-top: 10px;
-}
-
-.col.benefits p {
-    text-align: left;
-    color: black;
-    padding: 0;
-}
-
-.test-name{
-    padding: 0 10px;
-    font-weight: 600;
-    text-align: left;
-}
-
-
-/* Definisco le grandezze degli elementi interni alle colonne generali ABOUT US */
-
-.col.text-about h2 {
-    color:#B19FF9;
-    font-size:50px;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.col.text-about p {
-    text-align: left;
-    color: black;
-    padding: 10px;
-}
-
-.about-presentation{
-    padding: 20px;
-    padding-left: 0;
-    font-weight: 600;
-    color: #B19FF9;
-    text-align: left;
-    font-size: 20px;
-}
-
-
-/* SEZIONE DEVELOPER */
-
 /* Definisco i colori e le grandezze all'interno della sezione Developer */
 #devsection {
-    background-color: white;
     padding-top: 100px;
 }
 
@@ -489,7 +236,6 @@ header .container {
 .fa-bullhorn{
     font-size: 70px
 }
-
 
 /* Versione Tablet */
 @media screen and (max-width:768px) {
@@ -533,7 +279,6 @@ header .container {
 
 }
 
-
 /* Versione smartphone */
 @media screen and (max-width: 480px) {
     #devsection .row {
@@ -559,8 +304,98 @@ header .container {
 }
 
 
-/* SEZIONE PLANNING */
 
+
+/* SEZIONE PLANNING */
+#plan{
+    background-color: #B19FF9;
+    padding-bottom: 20px;
+}
+
+/* Inserisco le righe e colonne per la parte PLANNING */
+
+.row.planning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.col.planning{
+    margin-top: 50px;
+    max-width: 35%;
+    height: auto;
+    background-color:#B19FF9
+}
+
+.col.planning-white{
+    margin-top: 50px;
+    max-width: 35%;
+    background-color:white;
+    align-self: flex-end;
+}
+
+/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione PLANNING */
+.text-plan {
+    margin-top: 50px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.image-plan {
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.image-plan img {
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+.image-plan-white {
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.image-plan-white img {
+    max-width: 50%;
+    object-fit: cover;
+    z-index: 0;  
+}
+
+/* Definisco le grandezze degli elementi interni alle colonne generali PLANNING */
+.black{
+    color: black;
+    text-align: center;
+}
+
+.col.planning h2 {
+    text-align: left;
+}
+
+.col.planning p {
+    text-align: left;
+}
+
+.col.planning-white h2 {
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.col.planning-white p {
+    text-align: center;
+    font-style: oblique;
+    font-size: 13px;
+}
 
 /* Versione Tablet */
 @media screen and (max-width:768px) {
@@ -626,7 +461,72 @@ header .container {
 
 
 
+
+
+
 /* SEZIONE TESTIMONIAL */
+/* Inserisco le righe e colonne per la parte TEST */
+
+.col.testimonials-white{
+    background-color:white;
+    padding: 10px;
+    width: 100%;
+}
+
+.col.testimonials{
+    color: white;
+    background-color:#B19FF9;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione TEST */
+.text-plan {
+    margin-top: 50px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.image-test {
+    width: 40%;
+    padding: 30px;
+}
+
+.image-test img {
+    border-radius: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+/* Definisco le grandezze degli elementi interni alle colonne generali TEST */
+#testimonials-intro{
+    text-align: center;
+    font-size: 13px;
+}
+
+.col.testimonials-white h2 {
+    color:#B19FF9;
+    font-size:30px
+}
+.col.testimonials p {
+    text-align: left;
+    color: white;
+}
+
+.test-name{
+    padding: 0 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
 
 /* Versione Tablet */
 @media screen and (max-width:768px) {
@@ -675,7 +575,6 @@ header .container {
 }
 
 
-
 /* Versione Smartphone */
 @media screen and (max-width:480px) {
 
@@ -701,7 +600,68 @@ header .container {
 }
 
 
+
+
+
 /* SEZIONE BENEFITS */
+#benefits{
+    background-color: #B19FF9;
+    padding-bottom: 20px;
+}
+
+/* Inserisco le righe e colonne per la parte BENEFITS */
+.col.benefits{
+    background-color:white;
+}
+
+#benefits-title{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione BENEFITS */
+.text-benefits {
+    max-width: 100%;
+    margin:20px 0;
+    text-align: left;
+    padding:20px ;
+}
+
+/* Definisco le grandezze degli elementi interni alle colonne generali BENEFITS */
+
+#testimonials-intro{
+    text-align: center;
+    font-size: 13px;
+}
+
+.col.benefits h2 {
+    color:#B19FF9;
+    font-size:50px;
+    text-align: left;
+    margin: 0;
+}
+
+.col.benefits h3 {
+    color:#B19FF9;
+    font-size:20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.col.benefits p {
+    text-align: left;
+    color: black;
+    padding: 0;
+}
+
+.test-name{
+    padding: 0 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
 
 /* Versione Tablet */
 @media screen and (max-width:768px) {
@@ -727,7 +687,50 @@ header .container {
 
 }
 
+
+
 /* SEZIONE ABOUT US */
+/* Inserisco le righe e colonne per la parte ABOUT US */
+.col.text-about{
+    background-color:white;
+    width: 75%;
+}
+
+.col.image-about{
+    background-color:white;
+    width: 20%;
+}
+
+.image-about img {
+    border-radius: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Definisco le grandezze degli elementi interni alle colonne generali ABOUT US */
+
+.col.text-about h2 {
+    color:#B19FF9;
+    font-size:50px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.col.text-about p {
+    text-align: left;
+    color: black;
+    padding: 10px;
+}
+
+.about-presentation{
+    padding: 20px;
+    padding-left: 0;
+    font-weight: 600;
+    color: #B19FF9;
+    text-align: left;
+    font-size: 20px;
+}
 
 /* Versione Tablet */
 @media screen and (max-width:768px) {
@@ -766,8 +769,65 @@ header .container {
         width: 90%;
         margin: 25px;
     }
+}
 
 
+
+
+/* SEZIONE CALL ACTION */
+#action{
+    background-color: #B19FF9;
+}
+
+.action-text{
+    padding: 30px;
+    text-align: center;
+}
+
+.action-text h2{
+    padding: 5px;
+    color: orange;
+    font-size: 55px;
+}
+.action-text h3{
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+.action-text p{
+    padding: 20px 250px;
+    margin: 15px 0;
+    color: white;
+}
+
+.intro-action{
+    color: white;
+    font-size: 13px;
+}
+
+#copyright{
+    font-size: 10px;
+}
+
+.fa-circle{
+    font-size: 5px;
+}
+
+.underline{
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+
+/* Versione Tablet e smarthone */
+@media screen and (max-width:768px) {
+
+    .action-text p{
+        padding: 20px 50px;
+        margin: 15px 0;
+        color: white;
+    }
 }
 
 
@@ -775,33 +835,37 @@ header .container {
 
 
 
+/* FOOTER */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer */
 footer {
-    background-color: black;
+    background-color: #3f3f3f;
+}
+
+.footer-text{
+    text-align: center;
+    color: white;
+}
+
+.footer-text p{
+    font-size: 10px;
+    padding: 20px 375px
+}
+
+.underline-violet{
+    font-size: 10px;
+    text-decoration: underline;
+    color: #B19FF9;
+}
+
+
+/* Versione Tablet e smarthone */
+@media screen and (max-width:768px) {
+
+    .footer-text p{
+        padding: 20px 50px;
+        margin: 15px 0;
+        color: white;
+    }
 }
 
 
@@ -811,24 +875,24 @@ footer {
 
 
 
-/* DEBUG */
-section {
-    min-height: 150px;
-    background-color: brown;
-    margin-bottom: 20px;
-}
 
 
-.container {
-    background-color: aqua;
-    min-height: 50px;
-}
 
-footer {
-    min-height: 150px;
-}
 
-.col {
-    min-height: 100px;
-    background-color: lightskyblue;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
