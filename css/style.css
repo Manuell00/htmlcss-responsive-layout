@@ -154,7 +154,7 @@ header .container {
 .image-app {
     text-align: center;
     align-self: flex-end;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 .image-app img {
@@ -346,6 +346,15 @@ header .container {
     color: white;
 }
 
+.text-plan-black {
+    margin-top: 50px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+
+
 .image-plan {
     padding: 10px;
     text-align: center;
@@ -372,13 +381,9 @@ header .container {
 }
 
 /* Definisco le grandezze degli elementi interni alle colonne generali PLANNING */
-.black{
-    color: black;
-    text-align: center;
-}
-
 .col.planning h2 {
     text-align: left;
+    margin-top: 60px;
 }
 
 .col.planning p {
@@ -469,7 +474,8 @@ header .container {
 
 .col.testimonials-white{
     background-color:white;
-    padding: 10px;
+    padding: 50px;
+    padding-bottom: 0;
     width: 100%;
 }
 
@@ -486,12 +492,6 @@ header .container {
 
 
 /* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione TEST */
-.text-plan {
-    margin-top: 50px;
-    max-width: 100%;
-    margin-bottom: 50px;
-    color: white;
-}
 
 .image-test {
     width: 40%;
@@ -516,6 +516,7 @@ header .container {
     color:#B19FF9;
     font-size:30px
 }
+
 .col.testimonials p {
     text-align: left;
     color: white;
@@ -685,6 +686,10 @@ header .container {
         margin: 25px;
     }
 
+    #benefits-title{
+       font-size: 2.7rem;
+    }
+
 }
 
 
@@ -697,6 +702,7 @@ header .container {
 }
 
 .col.image-about{
+    padding-top: 20px;
     background-color:white;
     width: 20%;
 }
