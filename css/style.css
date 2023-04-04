@@ -18,10 +18,17 @@
     background-color: white;
 }
 
+.button-violet {
+    padding: 5px 30px;
+    border-radius: 25px;
+    color: white;
+    background-color: #B19FF9;
+}
+
 .circle-button {
     padding: 10px 15px;
     border-radius: 100%;
-    background-color: #9370DB;
+    background-color: #B19FF9;
 }
 
 a {
@@ -176,6 +183,19 @@ header .container {
 }
 
 
+/* Inserisco le righe e colonne per la parte BENEFITS */
+
+.col.benefits{
+    background-color:white;
+}
+
+#benefits-title{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
 /* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione DEVELOPER */
 .text-app {
     max-width: 50%;
@@ -248,6 +268,16 @@ header .container {
     max-width: 100%;
     object-fit: cover;
     z-index: 0;
+}
+
+
+/* Definisco le grandezze delle mie sottoporzioni di colonne e righe per la sezione BENEFITS */
+
+.text-benefits {
+    max-width: 100%;
+    margin:20px 0;
+    text-align: left;
+    padding:20px ;
 }
 
 
@@ -340,6 +370,40 @@ header .container {
 }
 
 
+/* Definisco le grandezze degli elementi interni alle colonne generali BENEFITS */
+
+#testimonials-intro{
+    text-align: center;
+    font-size: 13px;
+}
+
+.col.benefits h2 {
+    color:#B19FF9;
+    font-size:50px;
+    text-align: left;
+    margin: 0;
+}
+
+.col.benefits h3 {
+    color:#B19FF9;
+    font-size:20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.col.benefits p {
+    text-align: left;
+    color: black;
+    padding: 0;
+}
+
+.test-name{
+    padding: 0 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+
 /* SEZIONE DEVELOPER */
 
 /* Definisco i colori e le grandezze all'interno della sezione Developer */
@@ -384,7 +448,8 @@ header .container {
 /* Versione Tablet */
 @media screen and (max-width:768px) {
     .container {
-        width: 95%;
+        max-width: 90%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -523,8 +588,8 @@ header .container {
         display: block;
     }
 
-    .col.col.testimonials-white,
-    .col.col.testimonials {
+    .col.testimonials-white,
+    .col.testimonials {
         padding: 20px;
         max-width: 90%;
         width: 100%;
@@ -565,7 +630,6 @@ header .container {
 
 
 
-
 /* Versione Smartphone */
 @media screen and (max-width:480px) {
 
@@ -589,6 +653,45 @@ header .container {
     }
 
 }
+
+
+/* SEZIONE BENEFITS */
+
+/* Versione Tablet */
+@media screen and (max-width:768px) {
+
+    .col.benefits {
+        padding: 20px;
+        max-width: 40%;
+        width: 100%;
+        margin: 25px;
+    }
+
+}
+
+/* Versione smartphone */
+@media screen and (max-width:480px) {
+
+    .col.benefits {
+        padding: 20px;
+        max-width: 100%;
+        width: 100%;
+        margin: 25px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
